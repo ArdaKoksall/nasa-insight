@@ -30,7 +30,7 @@ public class Main {
             }
             String url = "https://api.nasa.gov/insight_weather/?api_key=" + apiKey + "&feedtype=json&ver=1.0";
 
-            String response = "";
+            String response;
 
             OkHttpClient client = new OkHttpClient();
             Request request = new Request.Builder().url(url).get().addHeader("accept", "application/json").build();
